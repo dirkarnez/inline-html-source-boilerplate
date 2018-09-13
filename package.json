@@ -1,0 +1,16 @@
+{
+  "name": "inline-html-source-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node -e \"require('rimraf').sync('build');require('fs').mkdirSync('build')\" && inline-source --compress false --root ./ index.html build/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "inline-source-cli": "^1.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
